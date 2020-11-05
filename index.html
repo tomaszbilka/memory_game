@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemoryGame</title>
+    <link rel="stylesheet" href="./style/css/main.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@200;300;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="game-wrapp">
+        <div class="game-wrapp__tile"></div>
+        <div class="game-wrapp__tile"></div>
+        <div class="game-wrapp__tile"></div>
+        <div class="game-wrapp__tile"></div>
+        <div class="game-wrapp__tile"></div>
+        <div class="game-wrapp__tile"></div>
+        <div class="game-wrapp__tile"></div>
+        <div class="game-wrapp__tile"></div>
+        <div class="game-wrapp__tile"></div>
+        <div class="game-wrapp__tile"></div>
+        <div class="game-wrapp__tile"></div>
+        <div class="game-wrapp__tile"></div>
+        <div class="game-wrapp__tile"></div>
+        <div class="game-wrapp__tile"></div>
+        <div class="game-wrapp__tile"></div>
+        <div class="game-wrapp__tile"></div>
+        <div class="game-wrapp__tile"></div>
+        <div class="game-wrapp__tile"></div>  
+    </div>
+
+    <div class="panel open">
+        <div class="panel__text">MEMORY</div>
+        <div class="panel__score">
+            <p class="panell__score__time">czas gry (game time): <span id="time">00:00</span></p>
+            <p class="panell__score__moves">liczba wykonanych ruchów (moves): <span id="move">0</span></p>
+        </div>
+        <button class="panel__button">Grajmy!(Play!)</button>
+    </div>
+    
+    <script src='./game.js'></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+@import "config";
+@import "media";
+@import "colors";
+@import "panel";
+
+.game-wrapp {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5px;
+    background-color: lighten($primary-color, 60%);
+    @include media;
+
+    &__tile {
+        margin: 10px;
+        border-radius: $radius;
+        box-shadow: 5px 5px 15px $primary-color;
+
+        &.off {
+            visibility: hidden;
+        }
+
+        &.hidden {
+            background-color: rgb(62, 102, 148);
+        }
+    }
+}
